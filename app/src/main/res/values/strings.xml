@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NotifApp</string>
+    <string name="simple_notification">create simple notification</string>
+    <string name="simple_notification_text">first simple notification</string>
+    <string name="notification_title">notification title</string>
+    <string name="notification_text">notification description</string>
+    <string name="reply_notification">notificatoin with reply</string>
+    <string name="reply_label">reply</string>
+    <string name="notif_content_sent">message sent!</string>
+    <string name="progress_notification">progress_notification</string>
+    <string name="max_progress_bar_value">progress bar max value</string>
+    <string name="screenshot_text">take screenshot</string>
+    <string name="big_text">bix text</string>
+    <string name="big_text_notification">big text notification</string>
+    <string name="group_notification">add notification to group</string>
+</resources>

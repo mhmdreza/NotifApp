@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.MainActivity">
+
+    <Button
+        android:id="@+id/button_simple_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="createSimpleNotification"
+        android:text="@string/simple_notification" />
+
+    <EditText
+        android:id="@+id/edittext_notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_simple_notification"
+        android:hint="@string/notification_title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_notification_title"
+        android:hint="@string/notification_text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_reply_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_notification_text"
+        android:layout_centerHorizontal="true"
+        android:onClick="createNotificationWithReply"
+        android:text="@string/reply_notification" />
+
+    <Button
+        android:id="@+id/button_progress_bar_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_reply_notification"
+        android:layout_centerHorizontal="true"
+        android:onClick="createProgressBarNotification"
+        android:text="@string/progress_notification" />
+
+    <EditText
+        android:id="@+id/edittext_max_progress_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_progress_bar_notification"
+        android:hint="@string/max_progress_bar_value"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button_screenshot_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_max_progress_value"
+        android:layout_alignParentLeft="true"
+        android:onClick="createScreenshotNotification"
+        android:text="@string/screenshot_text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edittext_max_progress_value"
+        android:id="@+id/button_big_text_notification"
+        android:text="@string/big_text_notification"
+        android:onClick="createLargeTextNotification"/>
+    <EditText
+        android:id="@+id/edittext_big_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_screenshot_notification"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:hint="@string/big_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edittext_big_text"
+        android:id="@+id/button_group_notification"
+        android:text="@string/group_notification"
+        android:onClick="addNotificationToGroup"/>
+</RelativeLayout>

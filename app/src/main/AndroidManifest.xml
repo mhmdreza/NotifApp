@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mhmdreza_j.notifapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.NotificationWithReplyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".broadcast_reciever.NotificationWithReplyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.SimpleNotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ProgressNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".services.ScreenshotNotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.BigTextNotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.GroupNotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>
